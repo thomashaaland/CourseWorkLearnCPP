@@ -1,0 +1,17 @@
+#include <iostream>
+
+int main()
+{
+  const int numNames= 8;
+  std::string names[numNames] = { 'Alex',
+				  'Betty',
+				  'Caroline',
+				  'Dave',
+				  'Emily',
+				  'Fred',
+				  'Greg',
+				  'Holly' };
+
+  
+  return 0;
+}

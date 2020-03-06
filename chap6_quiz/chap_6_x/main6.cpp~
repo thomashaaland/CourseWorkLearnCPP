@@ -1,0 +1,65 @@
+#include <iostream>
+
+enum CardRanks
+  { RANK_2,
+    RANK_3,
+    RANK_4,
+    RANK_5,
+    RANK_6,
+    RANK_7,
+    RANK_8,
+    RANK_9,
+    RANK_10,
+    RANK_JACK,
+    RANK_QUEEN,
+    RANK_KING,
+    RANK_ACE,
+    MAX_RANK
+  };
+enum CardSuits
+  { SUIT_CLUBS,
+    SUIT_DIAMONDS,
+    SUIT_HEARTS,
+    SUIT_SPADES,
+    MAX_SUIT
+  };
+
+struct Card
+{
+  CardRanks rank;
+  CardSuits suit;
+};
+
+printCard(const Card &card)
+{
+  switch (card.rank)
+    {
+    case RANK_2:     std::cout << '2'; break;
+    case RANK_3:     std::cout << '3'; break;
+    case RANK_4:     std::cout << '4'; break;
+    case RANK_5:     std::cout << '5'; break;
+    case RANK_6:     std::cout << '6'; break;
+    case RANK_7:     std::cout << '7'; break;
+    case RANK_8:     std::cout << '8'; break;
+    case RANK_9:     std::cout << '9'; break;
+    case RANK_10:    std::cout << 'T'; break;
+    case RANK_JACK:  std::cout << 'J'; break;
+    case RANK_QUEEN: std::cout << 'Q'; break;
+    case RANK_KING:  std::cout << 'K'; break;
+    case RANK_ACE:   std::cout << 'A'; break;
+    }
+
+  switch (card.suit)
+    {
+    case SUIT_CLUB:    std::cout << 'C'; break;
+    case SUIT_DIAMOND: std::cout << 'D'; break;
+    case SUIT_HEART:   std::cout << 'H'; break;
+    case SUIT_SPADE:   std::cout << 'S'; break;
+    }
+}
+
+int main()
+{
+
+  return 0;
+}

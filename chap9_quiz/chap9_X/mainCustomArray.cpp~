@@ -1,0 +1,13 @@
+#include <iostream>
+
+IntArray fillArray()
+{
+  IntArray a(5);
+  a[0] = 5;
+  a[1] = 8;
+  a[2] = 2;
+  a[3] = 3;
+  a[4] = 6;
+
+  return a;
+}

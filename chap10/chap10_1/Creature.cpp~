@@ -1,0 +1,6 @@
+#include "Creature.h"
+
+Creature::Creature(const std::string &name, const Point2D &location)
+    : m_name(name), m_location(location)
+  {
+  }

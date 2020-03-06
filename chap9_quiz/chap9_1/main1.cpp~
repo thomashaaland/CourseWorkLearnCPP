@@ -1,0 +1,15 @@
+#include <iostream>
+
+class Fraction
+{
+private:
+  int numerator;
+  int denominator;
+  
+};
+
+int main()
+{
+
+  return 0;
+}

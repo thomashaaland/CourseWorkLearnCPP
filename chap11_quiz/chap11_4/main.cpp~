@@ -1,0 +1,12 @@
+#include <iostream>
+
+class Base
+{
+private:
+  int m_id;
+
+  Base(int id = 0)
+    : m_id(id)
+  {
+  }
+};

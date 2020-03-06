@@ -1,0 +1,13 @@
+#include <iostream>
+
+void countUp(int n)
+{
+  std::cout << "Count: " << n << '\n';
+  countUp(++n);
+}
+
+int main()
+{
+  countUp(0);
+  return 0;
+}

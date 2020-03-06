@@ -1,0 +1,14 @@
+// Illigal operation, just because
+
+#include <iostream>
+
+int main()
+{
+  char c = 'A';
+
+  std::cout << &c;
+  
+  return 0;
+}
+
+// maybe compiler is too smart.. cant seem to break this

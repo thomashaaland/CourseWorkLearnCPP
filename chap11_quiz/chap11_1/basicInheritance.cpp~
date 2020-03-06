@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+#include "Person.h"
+#include "BaseballPlayer.h"
+#include "Employee.h"
+#include "Supervisor.h"
+
+int main()
+{
+  // Create a baseballPlayer object
+  BaseballPlayer joe;
+  // assign its name
+  joe.m_name = "Joe";
+  std::cout << joe.getName() << '\n';
+
+  Employee frank(20.25, 12345);
+  frank.m_name = "Frank";
+
+  frank.printNameAndSalary();
+  
+  return 0;
+}

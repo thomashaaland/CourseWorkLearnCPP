@@ -1,0 +1,27 @@
+#include <string>
+#include <iostream>
+
+class Teacher
+{
+private:
+  std::string m_name;
+
+public:
+  Teacher(std::string name)
+    : m_name(name)
+  {
+  }
+
+  std::string getName() { return m_name; }
+};
+
+class Department
+{
+private:
+  Teacher *m_teacher;
+
+public:
+  Department(Teacher *teacher = nullptr)
+    : m_teacher(teacher)
+  {
+  }

@@ -1,0 +1,6 @@
+#include "BaseballPlayer.h"
+
+BaseballPlayer::BaseballPlayer(double battingAverage = 0.0, int homeRuns = 0)
+  : m_battingAverage(battingAverage), m_homeRuns(homeRuns)
+{
+}

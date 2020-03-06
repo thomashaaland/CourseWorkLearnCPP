@@ -1,0 +1,18 @@
+#ifndef BASEBALLPLAYER_H
+#define BASEBALLPLAYER_H
+#include "Person.h"
+
+class BaseballPlayer : public Person
+{
+  // making members public for simplicity
+public:
+  double m_battingAverage;
+  int m_homeRuns;
+
+  BaseballPlayer(double battingAverage = 0.0, int homeRuns = 0)
+    : m_battingAverage(battingAverage), m_homeRuns(homeRuns)
+  {
+  }
+};
+
+#endif

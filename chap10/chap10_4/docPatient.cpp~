@@ -1,0 +1,20 @@
+#include <iostream>
+#include <string>
+#include <vector>
+
+// Due to circular dependency, forward declare patient
+
+class Patient;
+
+class Doctor
+{
+private:
+  std::string m_name{};
+  std::vector<Patient *> m_patient{};
+
+public:
+  Doctor(std::string name) :
+    m_name(name)
+  {
+  }
+};
