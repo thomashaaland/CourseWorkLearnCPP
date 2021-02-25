@@ -1,0 +1,24 @@
+#include<iosstream>
+
+void print(int n, int &arr) {
+  for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n; j++) {
+      std::cout << arr[i][j] << " ";
+    }
+    std::cout << std::endl;
+  }
+}
+
+int main() {
+  int n = 100;
+  
+  // 2d statically allocated array
+  int array[n][n] = {};
+  
+  // 2d dynamically allocated array
+  int *darr;
+  
+  darr = new int[n][n];
+  
+  return 0;
+}
